@@ -14,7 +14,9 @@ spec:
     path: charts/podinfo
     ref: master
   values:
-    image: sebastianortizs4n/podinfo:stg-aac8fai7
+    image:
+      repository: sebastianortizs4n/podinfo
+      tag: stg-aac8fai7
     replicaCount: 2
     hpa:
       enabled: true
