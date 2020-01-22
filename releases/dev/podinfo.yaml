@@ -7,7 +7,6 @@ metadata:
   annotations:
     fluxcd.io/automated: "false"
     filter.fluxcd.io/chart-image: glob:dev-*
-    linkerd.io/inject: enabled
 spec:
   releaseName: podinfo-dev
   chart:
@@ -26,4 +25,3 @@ spec:
     linkerd:
       profile:
         enabled: true
-
