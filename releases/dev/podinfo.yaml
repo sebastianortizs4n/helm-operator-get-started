@@ -24,5 +24,5 @@ spec:
       enabled: true
     linkerd:
       profile:
-        enabled: true
+        enabled: false
 
