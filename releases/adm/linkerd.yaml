@@ -39,7 +39,7 @@ spec:
             aWRlbnRpdHkubGlua2VyZC5jbHVzdGVyLmxvY2FsMAoGCCqGSM49BAMCA0cAMEQC
             IDyJfixtTb96+IQc0c22YHF2DPNS0ApvGRMgc7vGkKI7AiBjPzoEw+FOgYDQvFiU
             RDpeEnpKJ+DmW+YssU3qukvxQg==
-            -----END CERTIFICATE-----2021-01-21T10:36:38Z
+            -----END CERTIFICATE-----
           KeyPEM: |
               -----BEGIN EC PRIVATE KEY-----
               MHcCAQEEIN0Qu1F93xQ4qUXsj8loZy+CYgn4h2xt8vJ5oZha0gW5oAoGCCqGSM49
