@@ -5,7 +5,7 @@ metadata:
   name: linkerd-adm
   namespace: adm
 spec:
-  releaseName: linkerd
+  releaseName: linkerd-adm
   chart:
     repository: https://helm.linkerd.io/stable
     version: 2.6.1
