@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: sebastianortizs4n/podinfo
-      tag: stg-isk9z54o
+      tag: stg-pn3rl9mz
     replicaCount: 2
     hpa:
       enabled: true
