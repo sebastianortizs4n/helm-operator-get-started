@@ -7,11 +7,11 @@ metadata:
 spec:
   releaseName: linkerd
   chart:
-    repository: https://helm.linkerd.io/stable
-    version: 2.6.1
-    name: linkerd2
+    git: git@github.com:sebastianortizs4n/helm-operator-get-started
+    path: charts/linkerd2
+    ref: master
   values:
-    Namespace: linkerd
+    Namespace: linkerd    
     Identity:
       TrustAnchorsPEM: |
         -----BEGIN CERTIFICATE-----
