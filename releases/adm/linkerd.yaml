@@ -2,16 +2,16 @@
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
-  name: linkerd-adm
+  name: linkerd
   namespace: adm
 spec:
-  releaseName: linkerd-adm
+  releaseName: linkerd
   chart:
     repository: https://helm.linkerd.io/stable
     version: 2.6.1
     name: linkerd2
   values:
-    Namespace: linkerd-adm
+    Namespace: linkerd
     Identity:
       TrustAnchorsPEM: |
         -----BEGIN CERTIFICATE-----
