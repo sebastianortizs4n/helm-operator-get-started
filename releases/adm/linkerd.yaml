@@ -11,7 +11,7 @@ spec:
     version: 2.6.1
     name: linkerd2
   values:
-    Namespace: adm
+    Namespace: linkerd-adm
     Identity:
       TrustAnchorsPEM: |
         -----BEGIN CERTIFICATE-----
