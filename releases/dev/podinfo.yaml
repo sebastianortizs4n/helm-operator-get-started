@@ -7,6 +7,7 @@ metadata:
   annotations:
     fluxcd.io/automated: "false"
     filter.fluxcd.io/chart-image: glob:dev-*
+    fluxcd.io/ignore: "true"
 spec:
   releaseName: podinfo-dev
   forceUpgrade: true
