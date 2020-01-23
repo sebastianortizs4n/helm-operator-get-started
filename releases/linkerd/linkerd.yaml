@@ -6,7 +6,7 @@ metadata:
 spec:
   releaseName: linkerd
   chart:
-    repository: git@github.com:sebastianortizs4n/helm-operator-get-started
+    git: git@github.com:sebastianortizs4n/helm-operator-get-started
     path: charts/linkerd2
     ref: master
   values:
