@@ -27,6 +27,9 @@ spec:
       annotations:
         prometheus.io/scrape: "true"
         prometheus.io/port: "{{ .Values.service.httpPort }}"
+        {{- if .Values.linkerd.profile.enabled -}}
+        linkerd.io/inject: enabled
+        {{- end }}
     spec:
       terminationGracePeriodSeconds: 30
       {{- if .Values.serviceAccount.enabled }}
