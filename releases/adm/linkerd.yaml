@@ -7,8 +7,9 @@ metadata:
 spec:
   releaseName: linkerd
   chart:
-    repository: https://helm.linkerd.io/edge
-    name: linkerd2
+    repository: git@github.com:sebastianortizs4n/helm-operator-get-started
+    path: charts/linkerd2
+    ref: master
   values:
     Namespace: linkerd
     ControllerLogLevel: debug
