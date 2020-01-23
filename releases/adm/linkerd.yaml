@@ -10,10 +10,9 @@ spec:
     path: charts/linkerd2
     ref: master
   values:
-    Namespace: linkerd
-    ControllerLogLevel: debug
-    Identity:
-      TrustAnchorsPEM: |
+    global:
+      namespace: linkerd
+      identityTrustAnchorsPEM: |
         -----BEGIN CERTIFICATE-----
         MIIBwDCCAWagAwIBAgIQI+Q3NHTgnAFO/8pkU2DV5zAKBggqhkjOPQQDAjApMScw
         JQYDVQQDEx5pZGVudGl0eS5saW5rZXJkLmNsdXN0ZXIubG9jYWwwHhcNMjAwMTIy
@@ -26,9 +25,10 @@ spec:
         IAZc7OaLlznNzm/FVu3cfZPzUUwTFRJfBTaAKf0ibD74AiEA3z1Pw+Pqz0xKT0+y
         ame0mSNUPLVnGGu+qqnthP6rIu0=
         -----END CERTIFICATE-----
-      Issuer:
-        TLS:
-          CrtPEM: |
+    identity:
+      issuer:
+        tls:
+          crtPEM: |
             -----BEGIN CERTIFICATE-----
             MIIBvzCCAWagAwIBAgIQIPpTlBlHG/N1AA/Dyv6z9zAKBggqhkjOPQQDAjApMScw
             JQYDVQQDEx5pZGVudGl0eS5saW5rZXJkLmNsdXN0ZXIubG9jYWwwHhcNMjAwMTIy
@@ -41,10 +41,10 @@ spec:
             IDyJfixtTb96+IQc0c22YHF2DPNS0ApvGRMgc7vGkKI7AiBjPzoEw+FOgYDQvFiU
             RDpeEnpKJ+DmW+YssU3qukvxQg==
             -----END CERTIFICATE-----
-          KeyPEM: |
+          keyPEM: |
               -----BEGIN EC PRIVATE KEY-----
               MHcCAQEEIN0Qu1F93xQ4qUXsj8loZy+CYgn4h2xt8vJ5oZha0gW5oAoGCCqGSM49
               AwEHoUQDQgAEHxJBj0uHXfNry6Xky++fmp8+T02mYsKyhphtNLgPNWT8sMvyf0cx
               0AYKXBjEtno/kK8IP1LsE49AwBSeYpFiYA==
               -----END EC PRIVATE KEY-----
-        CrtExpiry: 2021-01-21T10:36:38Z
+      crtExpiry: 2021-01-21T10:36:38Z
