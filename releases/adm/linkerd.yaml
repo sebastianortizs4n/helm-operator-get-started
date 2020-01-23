@@ -11,7 +11,8 @@ spec:
     path: charts/linkerd2
     ref: master
   values:
-    Namespace: linkerd    
+    Namespace: linkerd
+    ControllerLogLevel: debug
     Identity:
       TrustAnchorsPEM: |
         -----BEGIN CERTIFICATE-----
