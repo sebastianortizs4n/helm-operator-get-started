@@ -2,7 +2,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: linkerd
-  namespace: linkerd
+  namespace: admg
 spec:
   releaseName: linkerd
   chart:
