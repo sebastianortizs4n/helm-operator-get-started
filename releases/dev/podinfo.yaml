@@ -9,6 +9,7 @@ metadata:
     filter.fluxcd.io/chart-image: glob:dev-*
 spec:
   releaseName: podinfo-dev
+  forceUpgrade: true
   chart:
     git: git@github.com:sebastianortizs4n/helm-operator-get-started
     path: charts/podinfo
