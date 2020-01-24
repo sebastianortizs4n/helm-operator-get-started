@@ -12,6 +12,7 @@ spec:
   values:
     global:
       namespace: linkerd
+      controllerLogLevel: debug
       identityTrustAnchorsPEM: |
         -----BEGIN CERTIFICATE-----
         MIIBwDCCAWagAwIBAgIQI+Q3NHTgnAFO/8pkU2DV5zAKBggqhkjOPQQDAjApMScw
