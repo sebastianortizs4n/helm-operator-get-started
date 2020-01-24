@@ -49,3 +49,5 @@ spec:
               0AYKXBjEtno/kK8IP1LsE49AwBSeYpFiYA==
               -----END EC PRIVATE KEY-----
         crtExpiry: 2021-01-21T10:36:38Z
+    proxy:
+      logLevel: debug
